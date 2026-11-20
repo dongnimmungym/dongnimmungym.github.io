@@ -182,3 +182,9 @@ body { background: #f7f5f0; font-family: 'Pretendard Variable', Pretendard, -app
   .evmini .evbtns { margin-top:12px; width:100%; }
   .evbtns .btn-fill, .evbtns .btn-line { flex:1 1 auto; justify-content:center; }
 }
+
+/* trainer credential list (expandable) */
+.creds-list { list-style:disc; padding-left:18px; margin:0; }
+.creds-list li { margin:2px 0; }
+.creds-toggle { margin-top:10px; padding:5px 14px; border:1px solid var(--ink); border-radius:999px; background:transparent; color:var(--ink); font-family:inherit; font-size:13px; font-weight:600; cursor:pointer; }
+.creds-toggle:hover { background:var(--ink); color:var(--bg); }

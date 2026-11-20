@@ -19,3 +19,17 @@
     });
   }
 })();
+
+// trainer credential list expand/collapse
+(function () {
+  document.querySelectorAll('.creds-toggle').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      var box = btn.closest('.creds');
+      if (!box) return;
+      var expanded = btn.getAttribute('aria-expanded') === 'true';
+      box.querySelectorAll('.cred-extra').forEach(function (li) { li.hidden = expanded; });
+      btn.setAttribute('aria-expanded', expanded ? 'false' : 'true');
+      btn.textContent = expanded ? '자격 더 보기' : '접기';
+    });
+  });
+})();
