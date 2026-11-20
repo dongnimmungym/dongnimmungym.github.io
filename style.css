@@ -158,3 +158,27 @@ body { background: #f7f5f0; font-family: 'Pretendard Variable', Pretendard, -app
 
 .heropick[hidden] { display:none; }
 @media (max-width:720px) { .toggle { display:none !important; } }
+
+/* 진행 중인 이벤트 */
+.evbranch { margin-top:56px; }
+.evbranch:first-of-type { margin-top:0; }
+.evbranch-name { font-size:24px; font-weight:600; letter-spacing:-0.02em; margin:0 0 20px; }
+.evbranch-name span { color:var(--ink2); font-size:14px; font-weight:400; margin-left:12px; }
+.evrow { display:grid; grid-template-columns:minmax(0,2fr) minmax(0,3fr); gap:28px; align-items:start; }
+.evmain { background:#fff; border:1px solid var(--line); border-top:2px solid var(--ink); }
+.evmain img { width:100%; display:block; }
+.evmain-body { padding:22px 24px 26px; }
+.evmain h4, .evmini h4 { font-size:19px; letter-spacing:-0.02em; margin:0; }
+.evdate { color:var(--gold); font-weight:700; font-size:14px; margin:6px 0 0; }
+.evdesc { color:var(--ink2); font-size:14px; margin:8px 0 0; }
+.evbtns { display:flex; flex-wrap:wrap; gap:8px; margin-top:16px; }
+.evbtns .btn-fill, .evbtns .btn-line { padding:10px 18px; font-size:13px; }
+.evlist-cards { display:grid; gap:14px; margin:0; padding:0; list-style:none; }
+.evmini { background:#fff; border:1px solid var(--line); padding:20px 22px; display:flex; flex-wrap:wrap; justify-content:space-between; align-items:center; gap:8px 16px; }
+.evmini p { color:var(--ink2); font-size:14px; margin:6px 0 0; }
+.evmini .evbtns { margin-top:0; }
+@media (max-width:720px) {
+  .evrow { grid-template-columns:1fr; }
+  .evmini .evbtns { margin-top:12px; width:100%; }
+  .evbtns .btn-fill, .evbtns .btn-line { flex:1 1 auto; justify-content:center; }
+}
